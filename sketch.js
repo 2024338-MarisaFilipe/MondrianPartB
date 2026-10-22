@@ -80,7 +80,7 @@ strokeWeight(w3);
 
 //LINHA 4 - HORIZONTAL 3
 strokeWeight(w4);
-line(width/2-25, height/2+355.69, 609, height/2+355.69);
+line(width/2-25, height/2+355.69, 603, height/2+355.69);
  
  // textura
 if (nnnoise) {
