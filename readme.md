@@ -1,5 +1,5 @@
 ##### Intenções
-Ao ter o meu código funcional com a composição base pensei em como queria o random e pensei numa composição que se mexesse com as linhas, neste caso o strokeWeight, por ter tanta diversidade de grossura de linhas achei que seria visualmente interessante fazer-las diminuir e aumentar em tempor real.
+Ao ter o meu código funcional com a composição base pensei em como queria o random e pensei numa composição que se mexesse com as linhas, neste caso o strokeWeight, por ter tanta diversidade de grossura de linhas achei que seria visualmente interessante fazer-las diminuir e aumentar em tempor real. A minha intenção com esta composição foi criar um mundo movimentado para além do racionalismo abstrato que esta obra me representa. Pensei na ideia da linha ultrapassar os limites como um desafio ao ultrapassar os limites do ratio e do que é a estaticidade plástica e moral. De uma forma literal, também ultrapassar a minha limitação de conhecimento perante código e desafiar-me a fazer parte de uma composição.
 
 ##### Processo
 
