@@ -4,7 +4,6 @@ let w1, w2, w3, w4, w5, w6;
 
 async function setup() {
   createCanvas(800, 784);
-  background(237,239,235);
 
   //o random dos strokeweight de cada linha
   w1 = random(12, 30);
@@ -35,6 +34,7 @@ function draw() {
     }
 
    background(237,239,235);
+noStroke()
 
 //vermelho
  fill(229, 26, 19);
@@ -50,7 +50,7 @@ function draw() {
 
 //linhas
  stroke(51);
-strokeCap(SQUARE)
+
 
 // x = centro - 33, y1 vai do topo (0) y2 ao fundo (height)
 // line(x1, y1, x2, y2)
@@ -70,7 +70,6 @@ strokeWeight(w6);
  line(width/2-319.02,height,width/2-319.02,width/2+118.04);
  
 
-
 //LINHA 2 - HORIZONTAL 1
 strokeWeight(w2);
  line(0,height/2-71.98,width,height/2-71.98);
@@ -81,12 +80,12 @@ strokeWeight(w3);
 
 //LINHA 4 - HORIZONTAL 3
 strokeWeight(w4);
- line(width/2-33,height/2+355.69,614,height/2+355.69);
+line(width/2-25, height/2+355.69, 609, height/2+355.69);
  
  // textura
-  if (nnnoise) {
-    drawingContext.globalAlpha = 0.6;
-    image(nnnoise, 0, 0, width, height);
-    drawingContext.globalAlpha = 1;
+if (nnnoise) {
+  drawingContext.globalAlpha = 0.6;
+  image(nnnoise, 0, 0, width, height);
+  drawingContext.globalAlpha = 1; //
   }
 }
