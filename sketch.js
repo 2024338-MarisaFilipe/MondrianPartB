@@ -2,7 +2,10 @@
 let nnnoise;
 let w1, w2, w3, w4, w5, w6;
 
+ // carrega imagem
 async function setup() {
+  nnnoise = await loadImage('https://2024338-marisafilipe.github.io/MondrianPartB/nnnoise.png');
+
   createCanvas(800, 784);
 
   //o random dos strokeweight de cada linha
@@ -12,13 +15,6 @@ async function setup() {
   w4 = random(12, 30);
   w5 = random(12, 30);
   w6 = random(12, 30);
-
- // carrega imagem + faz um aviso caso não carregue a imagem, como no p5 que não dá
-  try {
-    nnnoise = await loadImage('nnnoise.png');
-  } catch (error) {
-    console.error("Erro ao carregar a imagem:", error);
-  }
 }
 
 function draw() {
@@ -31,7 +27,8 @@ function draw() {
     w4 = random(12, 30);
     w5 = random(12, 30);
     w6 = random(12, 30);
-    }
+    
+  }
 
    background(237,239,235);
 noStroke()
@@ -83,9 +80,9 @@ strokeWeight(w4);
 line(width/2-25, height/2+355.69, 603, height/2+355.69);
  
  // textura
-if (nnnoise) {
-  drawingContext.globalAlpha = 0.6;
-  image(nnnoise, 0, 0, width, height);
-  drawingContext.globalAlpha = 1; //
+  if (nnnoise) {
+    drawingContext.globalAlpha = 0.6;
+    image(nnnoise, 0, 0, width, height);
+    drawingContext.globalAlpha = 1;
   }
 }
